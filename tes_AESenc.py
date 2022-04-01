@@ -11,15 +11,10 @@ from tkinter import *
 import os
 
 #Private Stuff
-key = input(r'Enter 16 digit key')
-## key = b'1234567890qwerty' #Todo Enter a Key(Like a password only) Here of Length 16 (Both Key and ivb required keep both safely and securely)
-iv = input(r'Enter 16 digit iv')
-##iv = b'1234567890qwerty' #Todo Enter a ivb (Like a password only) Here of Length 16 (Both Key and ivb required keep both safely and securely)
-
-with open("key.key", "wb") as key_file:
-        key_file.write(bytes(key, 'utf-8'))
-with open("iv.key", "wb") as iv_file:
-        iv_file.write(bytes(iv, 'utf-8'))
+##key = input(r'Enter 16 digit key')
+key = b'1234567890qwerty' #Todo Enter a Key(Like a password only) Here of Length 16 (Both Key and ivb required keep both safely and securely)
+##iv = input(r'Enter 16 digit iv')
+iv = b'1234567890qwerty' #Todo Enter a ivb (Like a password only) Here of Length 16 (Both Key and ivb required keep both safely and securely)
 
 cwd_original_1=os.getcwd()
 
